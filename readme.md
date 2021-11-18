@@ -34,14 +34,27 @@ This is the place where we will monitor the completion of your tasks.
    ```
 5. Copy the following Markdown template and paste it in your `readme.md` file
 
-```markdown
-# Your name
+   ```markdown
+   # Your name
 
-## About me
+   ## About me
 
-Your about me text here
+   Your about me text here
 
-## Why I am doing this course
+   ## Why I am doing this course
 
-I am doing this because ...
-```
+   I am doing this because ...
+   ```
+
+6. Track your changes with version control
+   ```sh
+   git add .
+   git commit -m "your message"
+   ```
+7. Push your changes to remote
+   ```sh
+   git push origin pedro-martin
+   ```
+8. Create a [pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+9. Wait for PR approval
