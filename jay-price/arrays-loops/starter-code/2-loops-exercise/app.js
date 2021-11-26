@@ -11,11 +11,17 @@
  * 2 that you want to calculate).
  **/
 
+let exponent = 10;
+
 /**
  * Step 2
  * Create a `for` loop that iterates starting at 1 and ending at the value of
  * the `exponent` variable.
  **/
+
+// for (exponent = 1; exponent <= 10; exponent++) {
+//   console.log(exponent);
+// }
 
 /**
  * Step 3
@@ -24,6 +30,10 @@
  *   (Hint: https://mdn.io/pow)
  * - log the result to the console
  **/
+
+// for (exponent = 1; exponent <= 10; exponent++) {
+//   console.log(Math.pow(2, exponent));
+// }
 
 /**
  * Step 4
@@ -35,6 +45,12 @@
  *    first statement logged to the console would be '2 to the power of 1 = 2')
  **/
 
+// let statement = `Calculating 2 to the power of ${exponent}`;
+// for (exponent = 1; exponent <= 10; exponent++) {
+//   power = Math.pow(2, exponent);
+//   console.log(`2 to the power of ${exponent} = ` + power);
+// }
+
 /**
  * BONUS 1: Rewrite your code to allow a user to enter the exponent value,
  * rather than hard-coding it into your program. (Hint: Read up on the
@@ -45,6 +61,15 @@
  * BONUS 2: Rewrite your code to use a `while` loop rather than a `for` loop.
  * (https://mdn.io/while)
  **/
+
+// While loop with a continue
+// continue pauses the loop and then continues afterwards (not logging value of the if statement)
+
+while (exponent < 10) {
+  exponent++;
+  power = Math.pow(2, exponent);
+  console.log(`2 to the power of ${exponent} = ` + power);
+}
 
 /**
  * BONUS 3: Rewrite your code to use a `do/while` loop rather than a `for` loop

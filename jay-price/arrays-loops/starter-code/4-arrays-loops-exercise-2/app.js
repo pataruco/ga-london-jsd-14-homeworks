@@ -19,11 +19,15 @@ console.log('Cart contents: ' + cart);
  1. Create a `cartWithTax` variable with an empty array as its value. 
 */
 
+let cartWithTax = [];
+
 /*
  2. Write a `forEach` loop that calculates the sales tax for each item in the cart 
  array, adds that to the original price of the item, and stores the result in the 
  cartWithTax array.
 */
+
+cartWithTax.forEach((element) => {});
 
 /*
  3. Log the value of cartWithTax to the console after it includes all values.

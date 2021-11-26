@@ -1,5 +1,5 @@
-'use strict';
-console.log('working!');
+// 'use strict';
+// console.log('working!');
 
 // 1. create a variable called firstName and assign it the value of your first name
 const firstName = 'Jay';

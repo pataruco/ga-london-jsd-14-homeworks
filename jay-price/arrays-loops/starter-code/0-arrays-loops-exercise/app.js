@@ -128,11 +128,11 @@ hundredths.forEach(function(element, index) {
  * the values 2, 3, 4, and 5.
  */
 
-// const q7 = numbers.maps(function (item) {
-//   return item + 1;
-// });
+const q7 = numbers.maps(function (item) {
+  return item + 1;
+});
 
-// console.log('Question 7: ', q7);
+console.log('Question 7: ', q7);
 
 /**
  * BONUS:
