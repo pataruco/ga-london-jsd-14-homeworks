@@ -19,9 +19,9 @@ let exponent = 10;
  * the `exponent` variable.
  **/
 
-// for (exponent = 1; exponent <= 10; exponent++) {
-//   console.log(exponent);
-// }
+for (exponent = 1; exponent <= 10; exponent++) {
+  console.log(exponent);
+}
 
 /**
  * Step 3
@@ -31,9 +31,9 @@ let exponent = 10;
  * - log the result to the console
  **/
 
-// for (exponent = 1; exponent <= 10; exponent++) {
-//   console.log(Math.pow(2, exponent));
-// }
+for (exponent = 1; exponent <= 10; exponent++) {
+  console.log(Math.pow(2, exponent));
+}
 
 /**
  * Step 4
@@ -45,11 +45,11 @@ let exponent = 10;
  *    first statement logged to the console would be '2 to the power of 1 = 2')
  **/
 
-// let statement = `Calculating 2 to the power of ${exponent}`;
-// for (exponent = 1; exponent <= 10; exponent++) {
-//   power = Math.pow(2, exponent);
-//   console.log(`2 to the power of ${exponent} = ` + power);
-// }
+let statement = `Calculating 2 to the power of ${exponent}`;
+for (exponent = 1; exponent <= 10; exponent++) {
+  power = Math.pow(2, exponent);
+  console.log(`2 to the power of ${exponent} = ` + power);
+}
 
 /**
  * BONUS 1: Rewrite your code to allow a user to enter the exponent value,
@@ -64,12 +64,6 @@ let exponent = 10;
 
 // While loop with a continue
 // continue pauses the loop and then continues afterwards (not logging value of the if statement)
-
-while (exponent < 10) {
-  exponent++;
-  power = Math.pow(2, exponent);
-  console.log(`2 to the power of ${exponent} = ` + power);
-}
 
 /**
  * BONUS 3: Rewrite your code to use a `do/while` loop rather than a `for` loop
