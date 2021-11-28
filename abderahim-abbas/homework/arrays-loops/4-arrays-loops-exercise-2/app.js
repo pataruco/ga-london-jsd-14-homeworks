@@ -19,30 +19,52 @@ console.log('Cart contents: ' + cart);
  1. Create a `cartWithTax` variable with an empty array as its value. 
 */
 
+let cartWithTax = []
+let cartWithTax1 = [] //BONUS
+
 /*
  2. Write a `forEach` loop that calculates the sales tax for each item in the cart 
  array, adds that to the original price of the item, and stores the result in the 
  cartWithTax array.
 */
 
+cart.forEach(function (element, index) {
+    //cartWithTax.push(Number.parseFloat((element * salesTax) + element).toFixed(2));
+    cartWithTax.push(Math.round((element * salesTax) + element)) // BONUS part
+})
+
+cart.map(x => cartWithTax1.push(Math.round((x * salesTax) + x))) //BONUS
+
+
 /*
  3. Log the value of cartWithTax to the console after it includes all values.
  Be sure to label your output in the console (remember: concatenation!)
 */
 
+console.log(`Cart With Tax : ${cartWithTax}`)
+console.log(`Cart With Tax : ${cartWithTax1}`) //BONUS
+
 /*
  4. Create a cartTotalWithTax variable and set its value to 0. 
 */
+
+let cartTotalWithTax = 0
 
 /*
  5. Write a `for` loop to total the values in the cartWithTax array, and assign
  the total as the value of the cartTotalWithTax variable. 
 */
 
+for (const key in cartWithTax) {
+    cartTotalWithTax += parseFloat(cartWithTax[key])
+}
+
 /*
  6. Log the cartTotalWithTax variable to the console. Be sure to label your 
  output in the console.
 */
+
+console.log(`Cart Total With Tax ${cartTotalWithTax}`)
 
 // BONUS
 
@@ -51,7 +73,11 @@ console.log('Cart contents: ' + cart);
  nearest penny. (See https://mdn.io/round)
 */
 
+// Done
+
 /*
  8. Rewrite your code from Steps 1 & 2 using the `array.map()` method. 
  (See https://mdn.io/map)
 */
+
+// DONE
