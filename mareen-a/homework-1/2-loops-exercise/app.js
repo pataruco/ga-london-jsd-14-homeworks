@@ -31,9 +31,6 @@ let exponent = 10;
  * - log the result to the console
  **/
 
- Math.pow(7, 2);    // 49 7x7
- Math.pow(7, 3);    // 343 7 x 7 x 7
-
 for(let i = 1; i <= exponent; i++) {
   let answer =  Math.pow(i, 2); 
   console.log(answer);

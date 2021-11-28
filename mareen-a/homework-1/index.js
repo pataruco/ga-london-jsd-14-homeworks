@@ -59,4 +59,4 @@ const fruit = 'Oranges'
 const vegetable = 'potatos'
 const drink = 'cola'
 
-console.log(fruit + ' ' + vegetable + ' ' + drink);
+console.log(`${fruit} ${vegetable} ${drink}`);
