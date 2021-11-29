@@ -64,6 +64,7 @@ console.log('Step 3', carTotalWithTax)
 
 Math.round(carTotalWithTax);
 console.log(Math.round(carTotalWithTax));
+// not sure
 
 /*
  8. Rewrite your code from Steps 1 & 2 using the `array.map()` method. 
