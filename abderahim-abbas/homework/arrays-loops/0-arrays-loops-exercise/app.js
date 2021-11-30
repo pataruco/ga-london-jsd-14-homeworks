@@ -122,5 +122,5 @@ console.log("Question 7:", q7)
  */
 
 //let sum = 0
-let sum = a1.reduce((pNbre, cNbre) => pNbre + cNbre)
+const sum = a1.reduce((pNbre, cNbre) => pNbre + cNbre)
 console.log("Bonus Question 8:", sum)
