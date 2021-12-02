@@ -77,3 +77,11 @@ while (exponent < 3) {
  * BONUS 3: Rewrite your code to use a `do/while` loop rather than a `for` loop
  * or `while` loop. (https://mdn.io/do...while)
  **/
+
+
+let exponent = 0
+
+for (exponent; exponent < 0; exponent++ <= 10)) {
+  console.group('Step 3: ',)
+     
+}
