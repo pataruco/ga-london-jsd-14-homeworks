@@ -25,4 +25,28 @@
 
   Example output:
     12 Dolphin Street, London , W11 2SE
+
+  Math.random();
 */
+
+const doorNumber = ['1', '2', '3', '4', '5', '6', '7'];
+const streetName = [
+  'Tremlett Way',
+  'Seven Sisters Road',
+  'Gloucester Court',
+  'Stamford Buildings',
+  'Hendon Way',
+];
+const cityName = ['London', 'Lisburn', 'Manchester', 'Liverpool', 'Belfast'];
+const postcodeList = ['N195JX', 'BT266HD', 'N77PL', 'W81UY'];
+
+function randomAddress(doorNumber, streetName, cityName, postcode) {
+  let door = doorNumber[Math.floor(Math.random() * doorNumber.length)];
+  let street = streetName[Math.floor(Math.random() * streetName.length)];
+  let city = cityName[Math.floor(Math.random() * cityName.length)];
+  let addressPostcode =
+    postcodeList[Math.floor(Math.random() * postcodeList.length)];
+  console.log(`${door} ${street}, ${city}, ${addressPostcode}`);
+}
+
+randomAddress(doorNumber, streetName, cityName, postcodeList);
