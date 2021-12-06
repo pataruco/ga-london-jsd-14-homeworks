@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /*
   Write code that generates random addresses
   Each time you run it, your program should log
@@ -26,3 +26,22 @@
   Example output:
     12 Dolphin Street, London , W11 2SE
 */
+
+const door_number = [50, 51, 52, 53, 54, 55];
+const street_name = ["rue du square", "rue le Notre", "rue du Bois", "rue Marcel Hirbec", "rue Pierre Curie"];
+const city_name = ["Bois dArcy", "Montigny - le - Bretonneux", "Plaisir", "Saint - Cyr", "Fontenay"];
+const post_code = [78390, 78180, 78192, 78188, 78120];
+
+function choice(index = 5) {
+    return Math.floor(Math.random() * index);
+}
+
+const door_number_choosen = choice(door_number.length);
+const street_name_choosen = choice(street_name.length);
+const city_name_choosen = choice(city_name.length);
+const post_code_choosen = choice(post_code.length);
+console.log(`Random Indexes : ${door_number_choosen}, ${street_name_choosen} ${city_name_choosen} ${post_code_choosen}`);
+console.log(`Random Address : ${door_number[door_number_choosen]}, ${street_name[street_name_choosen]} ${city_name[city_name_choosen]} ${post_code[post_code_choosen]}`);
+
+
+
