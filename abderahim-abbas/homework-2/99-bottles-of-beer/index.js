@@ -16,11 +16,10 @@
 */
 
 "use strict";
-let number_bottles = 0;
-const final_value = 100;
-for (let i = 0; i < 101; i++) {
-    number_bottles = final_value - i;
-    number_bottles === 1 ? console.log(`${number_bottles} bottle of Beer on the wall, ${number_bottles} bottles of beer.\n Take one down and pass it around, no more bottles of beer on the wall.`) : console.log(`${number_bottles} bottle of Beer on the wall, ${number_bottles} bottles of beer.\n Take one down and pass it around, ${number_bottles - 1} bottles of beer on the wall.`);
-    number_bottles === 0 ? console.log("\n No more bottles of beer on the wall, no more bottles of beer.\n Go to the store and buy some more, 99 bottles of beer on the wall.") : console.log("");
-    // console.log(`${number_bottles} bottles of Beer on the wall`);
+for (let i = 100; i--; i === 1) {
+    if (i != 0) {
+        i === 1 ? console.log(`${i} bottle of Beer on the wall, ${i} bottles of beer.\n Take one down and pass it around, no more bottles of beer on the wall.`) : console.log(`${i} bottle of Beer on the wall, ${i} bottles of beer.\n Take one down and pass it around, ${i - 1} bottles of beer on the wall.`);
+    } else {
+        console.log("No more bottles of beer on the wall, no more bottles of beer.\n Go to the store and buy some more, 99 bottles of beer on the wall.")
+    }
 }
