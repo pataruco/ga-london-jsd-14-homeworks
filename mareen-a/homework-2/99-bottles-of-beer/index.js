@@ -16,3 +16,38 @@
 */
 
 'use strict';
+
+function sing() {
+ for(let i = 10; i > 0; i--) {
+  if(i > 2) {
+   console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.\nTake one down and pass it around, ${i - 1} bottles of beer on the wall.`);
+  } else if(i === 2) {
+   console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.\nTake one down and pass it around, ${i - 1} bottle of beer on the wall.`);
+  } else {
+   console.log(`${i} bottle of beer on the wall, ${i} bottle of beer.\nTake one down and pass it around, ${i - 1} bottles of beer on the wall.`);
+  }
+ }
+}
+sing();
+
+
+
+
+
+
+
+
+// 99 bottles of beer on the wall, 99 bottles of beer.
+// Take one down and pass it around, 98 bottles of beer on the wall.
+
+// 98 bottles of beer on the wall, 98 bottles of beer.
+// Take one down and pass it around, 97 bottles of beer on the wall.
+
+// 97 bottles of beer on the wall, 97 bottles of beer.
+// Take one down and pass it around, 96 bottles of beer on the wall.
+
+// 96 bottles of beer on the wall, 96 bottles of beer.
+// Take one down and pass it around, 95 bottles of beer on the wall.
+
+// 95 bottles of beer on the wall, 95 bottles of beer.
+// Take one down and pass it around, 94 bottles of beer on the wall.
