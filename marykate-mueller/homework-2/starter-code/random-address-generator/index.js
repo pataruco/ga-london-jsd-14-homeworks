@@ -8,6 +8,8 @@
     Create arrays that contain dummy data for each of the following:
     door number, street name, city name, and post code
 
+    
+
   Step 2:
     Write code that randomly selects one item from each of these arrays, uses
     the selected values to construct a string containing a random address, and

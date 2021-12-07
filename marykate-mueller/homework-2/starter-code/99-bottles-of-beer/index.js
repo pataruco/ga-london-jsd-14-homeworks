@@ -7,6 +7,7 @@
   Be sure that all of your output includes proper spacing (no words or values
   running into each other).
 
+
   Hint: You can make your output appear on multiple lines by using the string '\n'
   to insert a line break.
 
@@ -15,4 +16,18 @@
   read up on if/else conditional statements at https://mdn.io/if...else).
 */
 
-'use strict';
+var word = 'bottles';
+var count = 99;
+while (count > 0) {
+  console.log(count + ' ' + word + ' of beer on the wall');
+  console.log(count + ' ' + word + ' of beer,');
+  console.log('Take one down, pass it around,');
+  count = count - 1;
+  if (count > 1) {
+    console.log(count + ' ' + count + ' of beer on the wall.');
+  } else if (count == 1) {
+    console.log(count + ' bottle of beer on the wall.');
+  } else {
+    console.log('No more ' + word + ' of beer on the wall.');
+  }
+}
