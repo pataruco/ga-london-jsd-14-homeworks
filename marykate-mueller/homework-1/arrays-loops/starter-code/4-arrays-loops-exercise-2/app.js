@@ -27,10 +27,13 @@ console.log('Question 1: ', carWithTax);
  cartWithTax array.
 */
 
-let SalesTax = [Price * 0.07];
-let Price = [80000];
-let Cart = [SalesTax + Price];
-carWithTax.forEach(Price * SalesTax);
+const SalesTax;
+SalesTax = 17 %
+const OriginalPrice;
+OriginalPrice = $5000
+const Cart;
+function cart = OriginalPrice * .17;
+cart.forEach(OriginalPrice+)
 console.log('Step 2: ', exponent, SalesTax, Price);
 
 /*

@@ -11,8 +11,8 @@
  * 2 that you want to calculate).
  **/
 
-var exponent;
-var=10;
+const exponent
+exponent = 10;
 console.log('Step 1: ' exponent);
 
 /**
@@ -33,10 +33,17 @@ console.log('Step 2: ', exponent);
  **/
 
 
-Math.pow(2, exponent);
-console.log(Math.pow(2, 2));
-// or would i write consol.log(Math.pow(exponent)); // ??
+for (let exponent = 0; exponent < 20; exponent++) {
+    console.log('Step 3: ',)
+}
 
+//or would it be for statement 3, exponent*2) ??? I'm honestly terrible at math and don't understand "2 to the power of"
+//or.... is it:
+
+for (let exponent = 0; exponent < 20; Math.pow(2, exponent)) {
+  console.group('Step 3: ',)
+  
+}
 
 /**
  * Step 4
@@ -70,3 +77,11 @@ while (exponent < 3) {
  * BONUS 3: Rewrite your code to use a `do/while` loop rather than a `for` loop
  * or `while` loop. (https://mdn.io/do...while)
  **/
+
+
+let exponent = 0
+
+for (exponent; exponent < 0; exponent++ <= 10)) {
+  console.group('Step 3: ',)
+     
+}
