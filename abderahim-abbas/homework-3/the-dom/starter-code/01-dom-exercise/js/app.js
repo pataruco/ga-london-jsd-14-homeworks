@@ -13,7 +13,7 @@ to reference the element with the ID value "headline"
 let headingText;
 // Write your statement below this line:
 
-headingText = document.querySelector('#headline');
+headingText = document.querySelector("#headline");
 console.log(headingText);
 
 
@@ -23,6 +23,9 @@ Write a statement that logs the text content of the headingText variable to the 
 (HINT: Use the textContent property.)
 
 */
+
+textContent = document.querySelector("#headline").textContent;
+console.log(textContent);
 
 /* Step 1c
 
@@ -43,7 +46,9 @@ to reference the first list item with the class value of "park"
 */
 
 let firstItem;
-console.log(document.querySelector('park'))
+console.log(document.querySelector(".park"));
+firstItem = document.querySelectorAll(".park")[0];
+
 
 /* Step 2b
 
@@ -55,12 +60,15 @@ BUT use a different CSS selector than you did in step 2a above.
 */
 
 let firstItemRepeat;
+firstItemRepeat = document.querySelector('.info')
 
 /* Step 2c
 
 Write statements that log the firstItem and firstItemRepeat variables to the console.
 
 */
+
+console.log(firstItemRepeat)
 
 /* Step 2d
 
