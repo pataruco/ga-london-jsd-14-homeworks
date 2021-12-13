@@ -19,3 +19,42 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 
 'use strict';
 
+document
+  .getElementById('fahrenheit_to_celsius')
+  .addEventListener('click', convertToCelsius);
+
+document
+  .getElementById('celsius_to_fahrenheit')
+  .addEventListener('click', convertToFahrenheit);
+
+let result = document.querySelector('#result');
+
+function convertToCelsius() {
+  let temperature = document.querySelector('#temperature');
+  let temperatureValue = temperature.value;
+  let celsius = (temperatureValue - 32) / 1.8;
+  result.innerHTML = celsius;
+  document.getElementById('temperature').value = '';
+}
+
+function convertToFahrenheit() {
+  let temperature = document.querySelector('#temperature');
+  let temperatureValue = temperature.value;
+  let fahrenheit = 1.8 * temperatureValue + 32;
+  result.innerHTML = fahrenheit;
+  document.getElementById('temperature').value = '';
+}
+
+// First version of function without input
+//function convertToCelsius(temperature) {
+//   let celsius = (temperature - 32) / 1.8;
+//   console.log(celsius);
+// }
+// convertToCelsius(100);
+
+// First Version of the function with no input value
+// function convertToFahrenheit(temperature) {
+//   let fahrenheit = 1.8 * temperature + 32;
+//   console.log(fahrenheit);
+// }
+// convertToFahrenheit(30);
