@@ -18,4 +18,3 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 */
 
 'use strict';
-

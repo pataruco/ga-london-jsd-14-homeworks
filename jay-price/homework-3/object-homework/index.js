@@ -8,6 +8,8 @@
 
 'use strict';
 
+console.log('hello');
+
 // 1. Suppose that we wanted to create a browser-based calendar program for keeping track of things. In comments, list at least three reasonable abstractions that you might use to build this program; for each abstraction, list out at least two properties and behaviors that it would make sense for that abstraction to have. Below is an example - please write your answer in the same format.
 // 'Car'
 // Description: Our app manages car sales.
@@ -22,8 +24,17 @@
 
 // Answer Starts Here
 
-// Answer Ends Here
+// 'Calendar'
+// Description: Our application manages your calendar events.
+// Every 'calendar' has
+// - Meetings
+// - Attendees
+// Every 'calendar' can
+// - Add a meeting
+// - Invite attendees to a meeting
+// - Cancel meeting
 
+// Answer Ends Here
 
 // 2. Create an Object literal that lines up with the following description. Store it in the variable 'pet_owner', below. Be sure to give it reasonable values for each of its properties.
 
@@ -35,8 +46,12 @@
 
 // Answer Starts Here
 
-// Answer Ends Here
+let pet_owner = {
+  name: 'Jay',
+  address: '77 Tewkesbury St, Cathays, Cardiff',
+};
 
+// Answer Ends Here
 
 // 3. Create an Object literal that lines up with the following description. Store it in the variable `some_pet`, below.
 
@@ -52,10 +67,23 @@
 
 // Answer Starts Here
 
+let some_pet = {
+  name: 'Chaz',
+  species: 'Dog',
+  breed: 'Staffordshire Bullterrier',
+  noise: 'Woof',
+  makeNoise: function () {
+    console.log(this.noise);
+  },
+};
+
+// makeNoise
+some_pet.makeNoise();
+
 // Answer Ends Here
 
 /////////////////////////////////////////////////////////////
 
-// You're done! 
+// You're done!
 
 /////////////////////////////////////////////////////////////
