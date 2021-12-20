@@ -16,7 +16,7 @@ function keyPressed(event) {
   );
   audioSource.play();
 
-  //I have commented out the code below to show that I solved the problem with If/Else statments like the readme said.
+  // I have commented out the code below to show that I solved the problem with If/Else statments like the readme said.
   // I left it just incase you wanted it to be solved only with if/else.
   // Once it was working I thought there was a better/less verbose way to solve the same issue.
 
